@@ -1,0 +1,297 @@
+:root {
+  --primary: #2ecc71;
+  --dark: #0a192f;
+  --light: #ccd6f6;
+  --neon-shadow: 0 0 15px rgba(46, 204, 113, 0.4);
+}
+
+.about-content {
+  padding: 4rem 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bio-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.profile-column {
+  position: sticky;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.profile-about {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  box-shadow: var(--neon-shadow);
+  object-fit: cover;
+  object-position: center;
+}
+
+.under-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.bio-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.bio-column h1 {
+  font-size: 2.8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.journey-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.milestone {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-left: 4px solid var(--primary);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.milestone:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--neon-shadow);
+}
+
+.milestone h3 {
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.milestone p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(204, 214, 246, 0.8);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--primary);
+}
+
+.timeline-item {
+  position: relative;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  background: rgba(46, 204, 113, 0.05);
+  border-radius: 8px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.8rem;
+  top: 2rem;
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+.timeline-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+  font-size: 0.9rem;
+  color: rgba(204, 214, 246, 0.7);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: rgba(46, 204, 113, 0.1);
+}
+
+.skill-card i {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+}
+
+.skill-card span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .about-content {
+    padding: 4rem 5%;
+  }
+}
+
+@media (max-width: 992px) {
+  .bio-section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .profile-column {
+    position: static;
+    order: 2;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .profile-about {
+    margin: 0 auto;
+  }
+
+  .journey-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .bio-column h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .milestone {
+    padding: 1.2rem;
+  }
+
+  .milestone h3 {
+    font-size: 1.1rem;
+  }
+
+  .milestone p {
+    font-size: 0.85rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1rem;
+  }
+
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .skill-card i {
+    font-size: 2rem;
+  }
+
+  .timeline-item {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .profile-about {
+    width: 250px;
+    height: 250px;
+  }
+
+  .timeline::before {
+    left: 5px;
+  }
+
+  .timeline-item::before {
+    left: -1.2rem;
+    width: 10px;
+    height: 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skill-card {
+    min-width: auto;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  @media (hover: none) {
+    .milestone:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    .skill-card:hover {
+      transform: none;
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-about {
+    width: 200px;
+    height: 200px;
+  }
+
+  .bio-column h1 {
+    font-size: 1.8rem;
+  }
+
+  .milestone h3 {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

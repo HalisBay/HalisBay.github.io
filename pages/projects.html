@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halis Bay | Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav-container">
+            <div class="nav-brand" onclick="window.location.href='../index.html';">
+                <img src="../favicon.ico" alt="Logo" width="48" height="48">
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>      
+
+    <section class="projects-section">
+
+        <div class="filter-buttons">
+            <button class="filter-btn" class="active" data-filter="all">All</button>
+            <button class="filter-btn" class="active" data-filter="Python">Python</button>
+            <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+            <button class="filter-btn" data-filter="C">C</button>
+            <button class="filter-btn" data-filter="C++">C++</button>
+            <button class="filter-btn" data-filter="Java">Java</button>
+        </div>
+        
+        <div class="project-grid">
+
+        </div>
+    </section>
+
+    <footer>
+        <p style="text-align: center;">Designed by <a href="https://github.com/HalisBay" target="_blank">Halis Buğrahan Bay</a></p>
+    </footer>
+    <script src="../projectsScript.js"></script>
+</body>
+</html>

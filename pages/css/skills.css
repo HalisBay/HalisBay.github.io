@@ -1,0 +1,139 @@
+.project-name {
+  color: #2ecc71;
+}
+
+.tech-sphere {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.sphere-container {
+  perspective: 2000px;
+  display: block;
+  margin: 50px auto 2rem auto;
+  /* Üstten 100px, diğer kenarlardan otomatik merkezleme */
+  position: relative;
+  left: 100px;
+  /* Sağa 50px kaydırma */
+  transform-style: preserve-3d;
+}
+
+.sphere {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 20s linear infinite;
+  transform-origin: center center;
+}
+
+.icon {
+  position: absolute;
+  font-size: 2.5rem;
+  transform: rotateY(calc(var(--i) * (360deg / 18))) translateZ(150px);
+  transition: transform 0.3s;
+}
+
+/* Font Awesome İkonları için Renkler */
+.icon i {
+  color: inherit;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+  transform: rotateY(calc(var(--i) * (360deg / 18))) translateZ(180px)
+    scale(1.2);
+}
+
+/* SVG İkonları için Stil */
+.custom-icon {
+  width: 40px;
+  height: 40px;
+  filter: grayscale(0%);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+/* Büyütme efekti */
+.icon:hover .custom-icon {
+  transform: scale(1.2);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg) rotateX(15deg);
+  }
+
+  100% {
+    transform: rotateY(360deg) rotateX(15deg);
+  }
+}
+
+.icon i.fa-cuttlefish {
+  color: #004482;
+}
+
+.icon i.fa-microsoft {
+  color: #0078d4;
+}
+
+.icon i.fa-python {
+  color: #3776ab;
+}
+
+.icon i.fa-java {
+  color: #007396;
+}
+
+.icon i.fa-html5 {
+  color: #e34f26;
+}
+
+.icon i.fa-css3-alt {
+  color: #1572b6;
+}
+
+.icon i.fa-js {
+  color: #f7df1e;
+}
+
+.icon i.fa-terminal {
+  color: #4d4d4d;
+}
+
+.icon i.fa-linux {
+  color: #fcc624;
+}
+
+.icon i.fa-docker {
+  color: #2496ed;
+}
+
+.icon i.fa-database {
+  color: #336791;
+}
+
+.icon i.fa-git-alt {
+  color: #f05032;
+}
+
+.icon i.fa-leaf {
+  color: #6db33f;
+}
+
+.icon i.fa-server {
+  color: #009639;
+}
+
+.icon i.fa-react {
+  color: #007396;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "HRMS",
+    "description": "HRMS (Human Resources Management System) is a backend application developed to simplify human resources processes. Built using Spring Boot, this project provides the necessary APIs to efficiently manage core HR functions such as user management, job posting creation, and application tracking. Additionally, it offers role-based access control, allowing authorization based on different user roles. The project utilizes technologies such as Java, Spring Security, Hibernate, and PostgreSQL, while also providing API documentation with Swagger."
+  },
+  {
+    "name": "HrmsFrontend",
+    "description": "Human Resources Management System (HRMS). HRMSFrontend is a web application developed to simplify human resources management processes. Built using React and JavaScript, the application provides an interface that supports core HR functions such as job listing, application management, updating user accounts, and facilitating interaction between employers and candidates. Through API integration, it dynamically processes data by communicating with the backend of the HRMS system. "
+  },
+  {
+    "name": "Inception",
+    "description": "The 'Inception' project focuses on system administration and Docker. It involves setting up multiple services using Docker Compose, such as NGINX with TLS, WordPress, and MariaDB, within a virtual machine. The project aims to deepen your understanding of Docker and infrastructure management. You will need to configure Dockerfiles, build custom images, and ensure proper container management without using pre-built Docker images."
+  },
+  {
+    "name": "ft_Transcendence",
+    "description": "The project ft_Transcendence is about building a real-time multiplayer Pong game website where users can play against each other in tournaments. It includes features like player registration, matchmaking, and tournament management. The project is built with pure vanilla JavaScript for the frontend, and include a django backend. The site must be a single-page application and launched with Docker, ensuring it’s fully autonomous. It’s designed to be visually similar to the original Pong game but with added multiplayer and tournament functionality."
+  },
+  {
+    "name": "MyDataPath",
+    "description": "The 'MyDataPath' repository includes various Python-based data analysis projects. It contains multiple notebooks, such as data cleaning, visualization, and predictive modeling tasks. Some projects include tools for analyzing traffic density, medical data, page view time series, and more. These projects help demonstrate data science techniques, including working with libraries like Pandas, Numpy, and data visualization tools."
+  },
+  {
+    "name": "Cub3d",
+    "description": "The 'Cub3d' project is a 3D graphics game engine, developed using C programming. It focuses on rendering a 3D environment based on the raycasting technique, allowing the player to navigate through a virtual maze. The project was created as part of the 42 coding school curriculum, showcasing an understanding of low-level programming concepts such as memory management and graphics rendering."
+  },
+  {
+    "name": "minishell",
+    "description": "The 'minishell' project is a Unix-like shell implemented in C, designed to emulate basic shell functionalities like command parsing, environment variable management, and process execution. It handles various commands, supports piping, redirection, and other essential shell features. It helps in understanding system-level programming, focusing on memory management, process control, and file handling. This project was also part of the 42 curriculum."
+  },
+  {
+    "name": "minitalk",
+    "description": "The 'minitalk' project is aimed at developing a signal-based communication system using the C programming language. In this project, data transmission between the client and server is done through UNIX signals. The client sends data to the server, and the server receives and processes the data. This project helps gain in-depth knowledge in system programming, signal management, and inter-process communication. The project is part of the 42 school's curriculum and is designed to provide students with practical experience in low-level programming and system management."
+  },
+  {
+    "name": "Philosophers",
+    "description": "The 'Philosophers' project is part of the 42 school's curriculum, focused on learning multithreading programming. In this project, a program is developed to simulate the dining times of philosophers. Each philosopher is represented as a thread, simulating specific behaviors while eating or thinking. The project provides in-depth knowledge of synchronization, access to shared resources, and thread management."
+  },
+  {
+    "name": "PushSwap",
+    "description": "The 'PushSwap' project focuses on sorting an array of integers using two stacks (a and b) and predefined operations. The project aims to sort the numbers in stack a in ascending order with minimal operations, such as swapping elements, pushing elements between stacks, rotating stacks, and reversing rotations. The challenge lies in optimizing the sequence of operations. This project is developed in C, emphasizing algorithm efficiency and memory management."
+  },
+  {
+    "name": "SoLong",
+    "description": "The 'SoLong' is a 2D game project written in the C programming language. The game loads a map file and allows the player to move a character on the map to achieve various goals. The game can be completed by reaching a specific target or collecting certain items. This project focuses on elements essential to game design, such as movement, interaction, and memory management."
+  },
+  {
+    "name": "InternetRelayChat",
+    "description": "The 'InternetRelayChat' project is a backend application developed with C++ for the KVIrc IRC client. IRC (Internet Relay Chat) is a protocol used for text-based real-time communication over the internet. In this project, an IRC server functionality is provided using the IRC protocol. Users can connect with the KVIrc client to chat and communicate with each other via this server.The project offers basic IRC functionalities such as creating chat rooms, sending and receiving messages, and user management. The backend responds to requests from the KVIrc client, handles channel management, and enables interaction between users. When users connect to the server, they can perform operations like authentication, retrieving the user list, and joining chat rooms."
+  }
+]
