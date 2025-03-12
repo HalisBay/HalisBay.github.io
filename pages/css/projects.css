@@ -81,12 +81,17 @@
   }
 
   .project-link {
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
+  .project-link {
+    width: 90%;
+    text-align: center;
+  }
+
   .project-grid {
     grid-template-columns: 1fr;
   }

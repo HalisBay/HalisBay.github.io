@@ -192,6 +192,13 @@ body {
 
 /* Yeni eklenen responsive stiller */
 @media (max-width: 1200px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
   .hero-content {
     flex-wrap: wrap;
     gap: 2rem;
@@ -254,6 +261,10 @@ body {
   .sphere .custom-icon {
     max-width: 30px;
   }
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.7rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -283,4 +294,7 @@ body {
     font-size: 0.9rem;
     padding: 0.3rem 0.7rem;
   }
+}
+.nav-links {
+  flex-direction: row !important;
 }
