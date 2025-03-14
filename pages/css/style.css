@@ -111,12 +111,11 @@ body {
 }
 
 .hero-content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
 }
-
 .hero-text h1 {
     font-size: 4rem;
     margin: 0;
@@ -199,15 +198,14 @@ body {
     margin-top: 1rem;
   }
 
-  .hero-content {
-    flex-wrap: wrap;
-    gap: 2rem;
+.hero-content {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
   }
   
-  .sphere-container {
-    order: -1;
-    margin-top: 2rem;
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -248,19 +246,6 @@ body {
     font-size: 1.8rem;
   }
 
-  .sphere-container {
-    width: 300px;
-    height: 300px;
-  }
-
-  .sphere .icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .sphere .custom-icon {
-    max-width: 30px;
-  }
   .nav-links a {
     font-size: 0.9rem;
     padding: 0.3rem 0.7rem;
@@ -278,16 +263,6 @@ body {
 
   .social-links {
     font-size: 1.5rem;
-  }
-
-  .sphere-container {
-    width: 250px;
-    height: 250px;
-  }
-
-  .sphere .icon {
-    width: 30px;
-    height: 30px;
   }
 
   .nav-links a {

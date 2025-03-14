@@ -3,27 +3,33 @@
 }
 
 .tech-sphere {
-  margin: 4rem 0;
+  margin: 5rem 0;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 20px;
+  justify-content: center;
+  padding-right: 5;
 }
 
 .sphere-container {
   perspective: 2000px;
-  display: block;
-  margin: 50px auto 2rem auto;
-  /* Üstten 100px, diğer kenarlardan otomatik merkezleme */
+  margin: 0 auto;
   position: relative;
-  left: 100px;
-  /* Sağa 50px kaydırma */
   transform-style: preserve-3d;
+  left: 200px;
+  text-align: center;
 }
+
+/* Büyük ekranda normal boy */
+.sphere-scale {
+  display: inline-block;
+  transform-origin: center center;
+}
+
 
 .sphere {
   position: relative;
   width: 200px;
   height: 200px;
+  margin: 0; 
   transform-style: preserve-3d;
   animation: rotate 20s linear infinite;
   transform-origin: center center;
@@ -69,6 +75,42 @@
     transform: rotateY(360deg) rotateX(15deg);
   }
 }
+
+
+@media (max-width: 768px) {
+  .sphere{
+    width: auto;
+    height: auto;
+  }
+  .sphere-container {
+    left: auto;
+    right: auto;
+
+    margin-top: 40px;
+  }
+
+  .sphere-scale {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 480px) {
+  .sphere{
+    width: auto;
+    height: auto;
+  }
+  .sphere-container {
+    left: auto;
+    right: auto;
+    margin-top: 30px;
+
+  }
+
+  .sphere-scale {
+    transform: scale(0.5);
+  }
+}
+
 
 .icon i.fa-cuttlefish {
   color: #004482;
@@ -129,11 +171,3 @@
 .icon i.fa-react {
   color: #007396;
 }
-
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-
